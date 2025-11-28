@@ -10,11 +10,11 @@ int main() {
     cout << "Bienvenido al decodificador de codificacion numerica invertida" << endl;
     cout << endl;
     cout << "Cuantos conjuntos de numeros tiene tu mensaje (ej: 111 222 son dos conjuntos): ";
-    cin >> cantidad;
+    cin >> cantidad; //entrada del usuario para que el decriptador leea
 
     vector<int> arreglo(cantidad);
 
-    cout << "Ingresa los numeros separados por espacio (ej: 111 97 100): " << endl;
+    cout << "Ingresa los numeros separados por espacio (ej: 111 97 100): " << endl; //muestra el texto en pantalla para que el usuario entienda
     for(int i = 0; i < cantidad; i++) {
         cin >> arreglo[i];
     }
@@ -27,13 +27,14 @@ int main() {
     }
 
     cout << "Arreglo ordenado correctamente: ";
+    //ordena el codigo al orden que mas sentido tiene 
     for(int i = 0; i < cantidad; i++) {
         cout << arreglo[i] << " ";
     }
     cout << endl;
 
     cout << "Mensaje decifrado: ";
-    // Se convierte a caracteres
+    // Se convierte a caracteres mas complejos (numeros o letras)
     for(int i = 0; i < cantidad; i++) {
         cout << char(arreglo[i]);
     }
