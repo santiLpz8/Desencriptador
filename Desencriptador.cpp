@@ -27,14 +27,14 @@ int main() {
     }
 
     cout << "Arreglo ordenado correctamente: ";
-    //ordena el codigo al orden que mas sentido tiene 
+    //muestra el arreglo en su orden original
     for(int i = 0; i < cantidad; i++) {
         cout << arreglo[i] << " ";
     }
     cout << endl;
 
     cout << "Mensaje decifrado: ";
-    // Se convierte a caracteres mas complejos (numeros o letras)
+    // Se convierte a letras
     for(int i = 0; i < cantidad; i++) {
         cout << char(arreglo[i]);
     }
